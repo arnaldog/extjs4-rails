@@ -46,7 +46,7 @@ namespace :'extjs4-rails' do
     end
 
     task stylesheets: STYLESHEETS_DIR do # Actually 'images' task is another prerequisite, too.
-      compass_command_line = %w(compass compile)
+      compass_command_line = %w(bundle exec compass compile)
       compass_init_path = File.join(File.dirname(__FILE__), '../config/compass_init.rb')
       compass_command_line << '--config' << compass_init_path
       compass_command_line << '--sass-dir' << File.join(EXTJS_DIR, "packages/ext-theme-#{THEME_NAME}/build")

@@ -51,7 +51,8 @@ You can also include specific files from the Sencha UX folders
 
 You can fork this gem and run
 
-    EXTJS_DIR=/path/to/extjs-4.x.x EXTJS_THEME=classic rake --trace extjs4-rails:install
+    bundle install
+    EXTJS_DIR=/path/to/extjs-4.x.x EXTJS_THEME=classic bundle exec rake --trace extjs4-rails:install
 
 to rebuild Ext JS, i.e. when you built your own theme.
 
